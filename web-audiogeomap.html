@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AudioGéoMap, Chaima Jallali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="brand" href="index.html">CHAIMA JALLALI</a>
+  <ul><li><a class="navlink" href="index.html#about">À propos</a></li><li><a class="navlink" href="film.html">Cinéma</a></li><li><a class="navlink active" href="web.html">Web</a></li><li><a class="navlink" href="festivals.html">Festivals</a></li><li><a class="navlink" href="index.html#contact">Contact</a></li></ul>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobilemenu" id="mobileMenu">
+  <button class="closemenu" id="closeMenuBtn">✕</button>
+  <a href="index.html#about">À propos</a><a href="film.html">Cinéma</a><a href="web.html">Web</a><a href="festivals.html">Festivals</a><a href="index.html#contact">Contact</a>
+</div>
+<div class="breadcrumb"><a href="index.html">Accueil</a> / <a href="web.html">Projets web</a> / AudioGéoMap</div>
+
+<div class="pagehero" style="padding-bottom:0;">
+  <div class="eyebrow">CARTE INTERACTIVE, PROJET POUR UN CLIENT RÉEL</div>
+  <h1>Audio<em>GéoMap</em></h1>
+  <p class="lede"><strong style="color:var(--text);">Présentation du projet :</strong> un site web avec une carte interactive réunissant des podcasts produits par des étudiants en géographie de l'université Gustave Eiffel.<br><strong style="color:var(--text);">Mon rôle :</strong> l'ensemble du processus, du logo, de la conceptualisation et du wireframing au codage complet de bout en bout mais aussi de la rédaction éditoriale du site web.</p>
+  <div class="result-box" style="max-width:640px;">Contrairement à WindMap ou MadAtlas, AudioGéoMap a été conçu pour un véritable client, Mari Oiry Varacca, et le site est réellement utilisé aujourd'hui.</div>
+</div>
+
+<section style="padding-top:20px;">
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <h3>Structuration des données</h3>
+      <p>Tout commence par un tableur : j'ai construit un fichier .CSV depuis Excel pour organiser chaque documentaire sonore (ville, année, thème, coordonnées, fichier audio) afin de pouvoir l'intégrer directement dans Leaflet.js.</p>
+      <div class="step-media">
+        <div class="gallery-item" style="cursor:zoom-in; border-radius:14px; overflow:hidden; border:1px solid var(--ink3); max-width:720px;" data-group="audiostep">
+          <img src="images/audiogeo-csv.jpg" alt="Structuration des données d'Excel vers CSV pour AudioGéoMap">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <h3>Wireframe de l'expérience</h3>
+      <p>Avant d'écrire une ligne de code, ce logo combine un repère de localisation (ouvert à la base pour former la lettre « A » comme Audio) avec trois ondes représentant le son, des courbes de niveau topographiques et la lettre « M ».
+
+Validé dans un premier temps pour sa structure lors des premières esquisses, le concept a ensuite été développé dans une palette de couleurs plus vive et plus dynamique, suite aux retours du client. J'ai esquissé la navigation : une vue carte, un catalogue audio, des filtres par ville/année/thème et un lecteur, le tout relié dès le départ.</p>
+      <div class="step-media two-col">
+        <div class="gallery-item g-item" data-group="audiostep"><img src="images/idea1audiogeomap.PNG" alt="Première idée d'AudioGéoMap"></div>
+        <div class="gallery-item g-item" data-group="audiostep"><img src="images/idea1audiogeomap2.PNG" alt="Première idée d'AudioGéoMap"></div>
+        <div class="gallery-item g-item" data-group="audiostep"><img src="images/audiogeo-wireframe1.jpg" alt="Wireframe d'AudioGéoMap, vues carte & audio"></div>
+        <div class="gallery-item g-item" data-group="audiostep"><img src="images/audiogeo-wireframe2.jpg" alt="Wireframe d'AudioGéoMap, vue détaillée"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <h3>Le résultat, en direct</h3>
+      <p>Le site est en cours de développement, mais déjà en ligne et utilisé par de vrais étudiants aujourd'hui. Parcourez-le directement ci-dessous, sans avoir besoin d'ouvrir un nouvel onglet.</p>
+      <div class="embed-wrap step-media">
+        <div class="embed-toolbar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <span>audiogeomap.mastercmw.com</span>
+          <a href="https://audiogeomap.mastercmw.com/" target="_blank" rel="noopener">Ouvrir dans un nouvel onglet ↗</a>
+        </div>
+        <iframe src="https://audiogeomap.mastercmw.com/" height="720" loading="lazy" title="Site AudioGéoMap en ligne"></iframe>
+      </div>
+      <div class="result-box">Résultat : le projet est actuellement en cours. La carte en direct ci-dessus reflète son dernier état.</div>
+    </div>
+  </div>
+
+</section>
+
+<div class="project-nav">
+  <a href="web.html"><span class="lbl">← RETOUR À</span><span class="title">Tous les projets web</span></a>
+  <a class="next" href="web-windmap.html"><span class="lbl">PROJET SUIVANT →</span><span class="title">WindMap</span></a>
+</div>
+<footer>CHAIMA JALLALI, PORTFOLIO 2026 · FRANCE × CORÉE DU SUD</footer>
+
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lbClose">✕</button>
+  <button class="lightbox-nav prev" id="lbPrev">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lightbox-nav next" id="lbNext">›</button>
+  <div class="lightbox-caption" id="lbCaption"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

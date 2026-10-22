@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets de Veille, Chaima Jallali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="brand" href="index.html">CHAIMA JALLALI</a>
+  <ul><li><a class="navlink" href="index.html#about">À propos</a></li><li><a class="navlink" href="film.html">Cinéma</a></li><li><a class="navlink active" href="web.html">Web</a></li><li><a class="navlink" href="festivals.html">Festivals</a></li><li><a class="navlink" href="index.html#contact">Contact</a></li></ul>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobilemenu" id="mobileMenu">
+  <button class="closemenu" id="closeMenuBtn">✕</button>
+  <a href="index.html#about">À propos</a><a href="film.html">Cinéma</a><a href="web.html">Web</a><a href="festivals.html">Festivals</a><a href="index.html#contact">Contact</a>
+</div>
+<div class="breadcrumb"><a href="index.html">Accueil</a> / <a href="web.html">Projets web</a> / Projets de Veille</div>
+
+<div class="pagehero" style="padding-bottom:0;">
+  <div class="eyebrow">PROJETS DE VEILLE</div>
+  <h1>Projets <em>De Veille</em></h1>
+  <p class="lede">À travers mes projets de veille et de rédaction éditoriale, j’explore des sujets variés, du rôle de l’arbitrage dans le football à l’univers du graffiti. Ces travaux mobilisent mes capacités de recherche, d’analyse et de synthèse pour rendre des sujets accessibles et intéressants. Cette sélection présente les projets que j’ai pu mettre en forme dans des documents PDF au design soigné ; elle ne reflète pas l’ensemble de mes travaux rédactionnels.</p>
+</div>
+<section style="padding-top:20px;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
+    
+    <!-- Premier PDF -->
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%;">
+      <embed src="pdf/var1.pdf" type="application/pdf" width="100%" height="800px" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);" />
+      <a href="pdf/var1.pdf" target="_blank" style="padding: 10px 18px; background: var(--coral, #ff5a5f); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px;">
+        🔍 Ouvrir / Agrandir le PDF 1
+      </a>
+    </div>
+
+    <!-- Deuxième PDF -->
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%;">
+      <embed src="pdf/var2.pdf" type="application/pdf" width="100%" height="800px" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);" />
+      <a href="pdf/var2.pdf" target="_blank" style="padding: 10px 18px; background: var(--coral, #ff5a5f); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px;">
+        🔍 Ouvrir / Agrandir le PDF 2
+      </a>
+    </div>
+
+    <!-- Troisième PDF -->
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%;">
+      <embed src="pdf/graffiti.pdf" type="application/pdf" width="100%" height="800px" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);" />
+      <a href="pdf/graffiti.pdf" target="_blank" style="padding: 10px 18px; background: var(--coral, #ff5a5f); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px;">
+        🔍 Ouvrir / Agrandir le PDF 2
+      </a>
+    </div>
+
+  </div>
+</section>
+<footer>CHAIMA JALLALI, PORTFOLIO 2026 · FRANCE × CORÉE DU SUD</footer>
+
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lbClose">✕</button>
+  <button class="lightbox-nav prev" id="lbPrev">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lightbox-nav next" id="lbNext">›</button>
+  <div class="lightbox-caption" id="lbCaption"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

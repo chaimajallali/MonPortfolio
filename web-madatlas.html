@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MadAtlas, Chaima Jallali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="brand" href="index.html">CHAIMA JALLALI</a>
+  <ul><li><a class="navlink" href="index.html#about">À propos</a></li><li><a class="navlink" href="film.html">Cinéma</a></li><li><a class="navlink active" href="web.html">Web</a></li><li><a class="navlink" href="festivals.html">Festivals</a></li><li><a class="navlink" href="index.html#contact">Contact</a></li></ul>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobilemenu" id="mobileMenu">
+  <button class="closemenu" id="closeMenuBtn">✕</button>
+  <a href="index.html#about">À propos</a><a href="film.html">Cinéma</a><a href="web.html">Web</a><a href="festivals.html">Festivals</a><a href="index.html#contact">Contact</a>
+</div>
+<div class="breadcrumb"><a href="index.html">Accueil</a> / <a href="web.html">Projets web</a> / MadAtlas</div>
+
+<div class="pagehero" style="padding-bottom:0;">
+  <div class="eyebrow">IDENTITÉ DE MARQUE · PROJET ÉTUDIANT</div>
+  <h1>Mad<em>Atlas</em></h1>
+  <p class="lede">Dans le cadre d'un projet universitaire pour MadAtlas, j'ai conçu un logo profondément ancré dans l'identité de Madagascar. J'ai choisi de mettre en avant le lémurien, animal représentatif et emblème de l'île. Ce clin d'œil direct à la faune malgache célèbre sa biodiversité unique tout en créant un lien authentique avec la région. Un design pensé pour rapprocher le projet de son écosystème et de ses racines.</p>
+</div>
+<section style="padding-top:20px;">
+  <div class="gallery">
+    <div class="g-item gallery-item" data-group="madatlas"><img src="images/madatlas1.jpg" alt="MadAtlas, recherche d'identité visuelle"></div>
+    <div class="g-item gallery-item" data-group="madatlas"><img src="images/madatlas2.jpg" alt="MadAtlas, affinage du logo et système de couleurs"></div>
+  </div>
+</section>
+<div class="project-nav">
+  <a href="web-windmap.html"><span class="lbl">← PROJET PRÉCÉDENT</span><span class="title">WindMap</span></a>
+  <a class="next" href="web.html"><span class="lbl">RETOUR À →</span><span class="title">Tous les projets web</span></a>
+</div>
+<footer>CHAIMA JALLALI, PORTFOLIO 2026 · FRANCE × CORÉE DU SUD</footer>
+
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lbClose">✕</button>
+  <button class="lightbox-nav prev" id="lbPrev">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lightbox-nav next" id="lbNext">›</button>
+  <div class="lightbox-caption" id="lbCaption"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
