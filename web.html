@@ -26,25 +26,52 @@
 <div class="pagehero">
   <div class="eyebrow">03, PROJETS WEB</div>
   <h1>Projets <em>web</em></h1>
-  <p class="lede">Cartes interactives, Projets de veille, identité de marque et design d'application mobile, du wireframe au produit fonctionnel.</p>
+  <p class="lede">Statistiques de contenus sur les réseaux sociaux, cartes interactives, Projets de veille, identité de marque et design d'application mobile, du wireframe au produit fonctionnel.</p>
 </div>
+
+<style>
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  .card-grid .hub-card h3 { font-size: 1.05rem; }
+  .card-grid .hub-card p { font-size: 0.85rem; }
+
+  @media (max-width: 1200px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 800px)  { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px)  { .card-grid { grid-template-columns: 1fr; } }
+</style>
+
 <section style="padding-top:0;">
-<div class="card-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">    <a class="hub-card" href="web-audiogeomap.html">
+  <div class="card-grid">
+
+    <a class="hub-card" href="web-audiogeomap.html">
       <div class="thumb logo-cover"><img src="images/cover-audiogeomap.jpg" alt="Logo d'AudioGéoMap" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="body"><span class="tag" style="background:none;border:none;padding:0;color:var(--coral);">CARTE INTERACTIVE · CLIENT RÉEL</span><h3>AudioGéoMap</h3><p>Podcasts d'étudiants en géographie, cartographiés avec Leaflet.js.</p><div class="go">Voir le projet →</div></div>
     </a>
+
     <a class="hub-card" href="web-windmap.html">
       <div class="thumb logo-cover"><img src="images/cover-windmap.jpg" alt="Logo de WindMap" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="body"><span class="tag" style="background:none;border:none;padding:0;color:var(--coral);">APPLICATION MOBILE · PROJET ÉTUDIANT</span><h3>WindMap</h3><p>Un concept d'application météo &amp; alertes vent, du wireframe au prototype.</p><div class="go">Voir le projet →</div></div>
     </a>
+
     <a class="hub-card" href="web-madatlas.html">
       <div class="thumb logo-cover"><img src="images/cover-madatlas.jpg" alt="Logo de MadAtlas" style="width:100%;height:100%;object-fit:cover;"></div>
       <div class="body"><span class="tag" style="background:none;border:none;padding:0;color:var(--coral);">IDENTITÉ DE MARQUE · PROJET ÉTUDIANT</span><h3>MadAtlas</h3><p>Design d'identité visuelle, lémurien + lettrage, né de la recherche.</p><div class="go">Voir le projet →</div></div>
     </a>
+
     <a class="hub-card" href="web-var.html">
       <div class="thumb logo-cover"><img src="images/varimage.jpg" alt="Logo de Var" style="width:100%;height:100%;object-fit:cover;"></div>
-      <div class="body"><span class="tag" style="background:none;border:none;padding:0;color:var(--coral);">PROJETS DE VEILLE · RÉDACTION ÉDITORIALE </span><h3>Projets de Veille</h3><p>Éditorialisation</p><div class="go">Voir les projets →</div></div>
+      <div class="body"><span class="tag" style="background:none;border:none;padding:0;color:var(--coral);">PROJETS DE VEILLE · RÉDACTION ÉDITORIALE</span><h3>Projets de Veille</h3><p>Éditorialisation</p><div class="go">Voir les projets →</div></div>
     </a>
+
+    <!-- NOUVELLE CARTE -->
+    <a class="hub-card" href="web-socialmedia.html">
+      <div class="thumb logo-cover"><img src="images/cover-analyses.jpg" alt="Analyses de contenus réseaux sociaux" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="body"><span class="tag" style="background:none;border:none;padding:0;color:var(--coral);">RÉSEAUX SOCIAUX · STATISTIQUES DE CONTENUS</span><h3>Statistiques de contenus</h3><p>Statistiques de contenus TikTok et Reels, performances et enseignements.</p><div class="go">Voir les analyses →</div></div>
+    </a>
+
   </div>
 </section>
 <footer>CHAIMA JALLALI, PORTFOLIO 2026 · FRANCE × CORÉE DU SUD</footer>
